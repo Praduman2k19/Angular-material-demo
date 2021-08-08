@@ -14,6 +14,7 @@ const MaterialComponents=[
   MatDividerModule,
   MatBadgeModule,
   MatProgressSpinnerModule
+  
 ]
 @NgModule({
   imports: [ MaterialComponents ],
