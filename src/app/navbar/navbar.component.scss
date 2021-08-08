@@ -1,0 +1,13 @@
+.navbar{
+  justify-content: space-between;
+  span{
+    padding-right: 1rem;
+  }
+}
+mat-sidenav, mat-sidenav-content{
+  padding: 16px;
+}
+mat-sidenav{
+  background: rgb(233, 142, 142);
+  width: 200px;
+}

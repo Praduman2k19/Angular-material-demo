@@ -1,0 +1,19 @@
+<div>
+
+  <div class="text-center h1 py-4">Progress Spinner</div>
+
+  <div >
+
+    <mat-progress-spinner value=100></mat-progress-spinner>
+    <mat-progress-spinner value=40></mat-progress-spinner>
+    <mat-progress-spinner value=70></mat-progress-spinner>
+    <br>
+
+    <mat-spinner></mat-spinner>
+
+    <hr>
+    <mat-spinner *ngIf="showSpinner" color="warn"></mat-spinner>
+    <button mat-raised-button color="primary" (click)="loadData()">Load Data</button>
+  </div>
+
+</div>

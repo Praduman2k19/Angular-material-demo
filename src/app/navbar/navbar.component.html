@@ -1,0 +1,44 @@
+<div class="text-center">
+  <div class="h1">Navbar</div>
+
+  <mat-toolbar color="primary" class="navbar">
+    <div>Codevolution</div>
+    <div>
+      <span>Home</span>
+      <span>About</span>
+      <span>Service</span>
+    </div>
+  </mat-toolbar>
+</div>
+
+<div class="mt-5">
+   <div class="text-center"><div class="h1">Sidenav</div></div>
+
+  <mat-sidenav-container>
+    <mat-sidenav  [opened]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main
+      <button mat-raised-button (click)="openclose()">Toggel opened</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <br>
+  <mat-sidenav-container>
+    <mat-sidenav mode="push" [opened]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main
+      <button mat-raised-button (click)="openclose()">Toggel opened</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <br>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" [opened]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main
+      <button mat-raised-button (click)="openclose()">Toggel opened</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+<br>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" >Sidenav</mat-sidenav>
+    <mat-sidenav-content>Main
+      <button mat-raised-button (click)="sidenav.toggle()">Toggel</button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
