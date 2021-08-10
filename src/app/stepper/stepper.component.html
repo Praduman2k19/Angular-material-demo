@@ -1,0 +1,35 @@
+<div mat-raised-button class="text-center display-4 fw-bold">Billing Process</div><br>
+
+
+<mat-horizontal-stepper linear>
+  <mat-step label="Shipping Address" completed="true">
+    <p>Shipping Address Details</p>
+  </mat-step>
+  <mat-step label="Billing Address" completed="true">
+    <p>Billing Address Details</p>
+    <button mat-raised-button matStepperPrevious> Back</button>
+    <button mat-raised-button matStepperNext>Next</button>
+  </mat-step>
+  <mat-step label="Place order" completed="false">
+    <p>Order Placed</p>
+  </mat-step>
+</mat-horizontal-stepper>
+
+<br><br><br>
+<mat-vertical-stepper linear>
+  <mat-step label="Shipping Address" completed="true">
+    <p>Shipping Address Details</p>
+  </mat-step>
+  <mat-step label="Billing Address" completed="true">
+    <p>Billing Address Details</p>
+    <button mat-raised-button matStepperPrevious> Back</button>
+    <button mat-raised-button matStepperNext>Next</button>
+  </mat-step>
+  <mat-step label="Place order" completed="false">
+    <p>Order Placed</p>
+  </mat-step>
+</mat-vertical-stepper>
+
+
+
+

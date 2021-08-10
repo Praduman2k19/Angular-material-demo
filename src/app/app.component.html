@@ -12,16 +12,19 @@
     <button mat-raised-button [routerLink]="['/gridlist']" color="primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">Grid list</button>
     <button mat-raised-button [routerLink]="['/expansion-panel']"    color="warn"     data-bs-toggle="modal" data-bs-target="#exampleModal">Expansion Panel</button>
     <button mat-raised-button [routerLink]="['/cards']"    color="warn"     data-bs-toggle="modal" data-bs-target="#exampleModal">Cards</button>
-    <button mat-raised-button [routerLink]="['/Tabs']"     color="accent"   data-bs-toggle="modal" data-bs-target="#exampleModal">Tabs</button>
+    <button mat-raised-button [routerLink]="['/tabs']"     color="accent"   data-bs-toggle="modal" data-bs-target="#exampleModal">Tabs</button>
+    <button mat-raised-button [routerLink]="['/stepper']"  color="primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">Stepper</button>
+    <button mat-raised-button [routerLink]="['/input']"    color="basic"    data-bs-toggle="modal" data-bs-target="#exampleModal">Input</button>
+    <button mat-raised-button [routerLink]="['/select']"    color="warn"    data-bs-toggle="modal" data-bs-target="#exampleModal">Slect</button>
+    <button mat-raised-button [routerLink]="['/autocomplete']" color=""     data-bs-toggle="modal" data-bs-target="#exampleModal">Autocomplete</button>
 
-
-
-<app-tabs></app-tabs>>
+    <app-autocomplete></app-autocomplete>
     <!-- Modal -->
   <div class="modal  fade bd-example-modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-body">
+          <br><br>
             <router-outlet></router-outlet>
         </div>
       </div>

@@ -1,0 +1,30 @@
+<div mat-raised-button class="text-center display-4 fw-bold">Autocomplete</div><br>
+
+<form action="">
+  <mat-form-field>
+    <mat-label>Enter</mat-label>
+    <input type="text" matInput [matAutocomplete]="auto1">
+    <mat-autocomplete #auto1="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+</form>
+
+<br>
+
+
+<form action="">
+  <mat-form-field>
+    <mat-label>Enter</mat-label>
+    <input type="text" matInput [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let opt of objectOption" [value]="opt.name">
+        {{opt?.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+</form>

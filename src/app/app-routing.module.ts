@@ -13,6 +13,10 @@ import { GridlistComponent } from './gridlist/gridlist.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { CardsComponent } from './cards/cards.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { InputComponent } from './input/input.component';
+import { SelectComponent } from './select/select.component';
+import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 
 const routes: Routes = [
   { path:'basic',component:BasicComponent},
@@ -27,7 +31,14 @@ const routes: Routes = [
   { path:'gridlist',component:GridlistComponent},
   { path:'expansion-panel',component:ExpansionPanelComponent},
   { path:'cards',component:CardsComponent},
-  { path:'tabs',component:TabsComponent}
+  { path:'tabs',component:TabsComponent},
+  { path:'stepper',component:StepperComponent},
+  { path:'input',component:InputComponent},
+  { path:'select',component:SelectComponent},
+  { path:'autocomplete',component:AutocompleteComponent},
+  { path:'select',component:SelectComponent},
+  { path:'select',component:SelectComponent},
+
 
 
 
