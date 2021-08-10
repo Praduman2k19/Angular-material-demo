@@ -15,6 +15,11 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
+import { ListComponent } from './list/list.component';
+import { GridlistComponent } from './gridlist/gridlist.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { CardsComponent } from './cards/cards.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { MenuComponent } from './menu/menu.component';
     BadgeComponent,
     ProgressSpinnerComponent,
     NavbarComponent,
-    MenuComponent
+    MenuComponent,
+    ListComponent,
+    GridlistComponent,
+    ExpansionPanelComponent,
+    CardsComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,68 @@
-<p>menu works!</p>
+<div class="mb-5 pb-5">
+  <div mat-raised-button class="text-center display-4 fw-bold">Menu</div><br>
+
+   <button mat-raised-button [matMenuTriggerFor]="appMenu" >Menu</button>
+
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item  [matMenuTriggerFor]="subMenu" >FrontEnd</button>
+    <button mat-menu-item>BackEnd</button>
+  </mat-menu>
+
+  <mat-menu #subMenu="matMenu">
+    <button mat-menu-item>ANgular</button>
+    <button mat-menu-item>ANgular</button>
+    <button mat-menu-item>ANgular</button>
+    <button mat-menu-item>ANgular</button>
+    <button mat-menu-item>ANgular</button>
+  </mat-menu>
+
+
+
+    <mat-menu #subMenu="matMenu">
+      <button mat-menu-item>ANgular</button>
+      <button mat-menu-item>ANgular</button>
+      <button mat-menu-item>ANgular</button>
+      <button mat-menu-item>ANgular</button>
+      <button mat-menu-item>ANgular</button>
+    </mat-menu>
+
+
+  <button mat-raised-button [matMenuTriggerData]="{name:'Vishwas'}" [matMenuTriggerFor]="lazyMenu">Vishwas</button>
+  <button mat-raised-button [matMenuTriggerData]="{name:'Codevolution'}" [matMenuTriggerFor]="lazyMenu">Codevolution</button>
+  <mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent let-name="name">
+      <Button mat-menu-item>Settings</Button>
+      <Button mat-menu-item>Log out {{name}}</Button>
+    </ng-template>
+  </mat-menu>
+
+
+  <br>
+  <br><br><br><br><br>
+  <button mat-raised-button color="accent" mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-raised-button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-raised-button color="primary" mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+
+<button mat-raised-button color="warn" mat-button [matMenuTriggerFor]="afterMenu">After</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+</div>
+

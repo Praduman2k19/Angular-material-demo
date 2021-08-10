@@ -1,18 +1,24 @@
 <div class="p-5 bg-light">
     <header class="text-center"><div class="h1">Angular Material</div></header>
-    <button mat-raised-button color="primary" [routerLink]="['/basic']"   data-bs-toggle="modal" data-bs-target="#exampleModal">Basic</button>
-    <button mat-raised-button                 [routerLink]="['/button']"  data-bs-toggle="modal" data-bs-target="#exampleModal">Buttons</button>
-    <button mat-raised-button color="accent"  [routerLink]="['/text']"    data-bs-toggle="modal" data-bs-target="#exampleModal">Text</button>
-    <button mat-raised-button color="warn"  [routerLink]="['/icon']"    data-bs-toggle="modal" data-bs-target="#exampleModal">Icon</button>
-    <button mat-raised-button color="primary"  [routerLink]="['/badge']"    data-bs-toggle="modal" data-bs-target="#exampleModal">badge</button>
-    <button mat-raised-button color="accent"  [routerLink]="['/progress-spinner']"    data-bs-toggle="modal" data-bs-target="#exampleModal">Progress Spinner</button>
-    <button mat-raised-button color=""  [routerLink]="['/navbar']"    data-bs-toggle="modal" data-bs-target="#exampleModal">Navbar</button>
+    <button mat-raised-button [routerLink]="['/basic']"    color="primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">Basic</button>
+    <button mat-raised-button [routerLink]="['/button']"   color="warn"     data-bs-toggle="modal" data-bs-target="#exampleModal">Buttons</button>
+    <button mat-raised-button [routerLink]="['/text']"     color="basic"    data-bs-toggle="modal" data-bs-target="#exampleModal">Text</button>
+    <button mat-raised-button [routerLink]="['/icon']"     color="accent"   data-bs-toggle="modal" data-bs-target="#exampleModal">Icon</button>
+    <button mat-raised-button [routerLink]="['/badge']"    color="warn"     data-bs-toggle="modal" data-bs-target="#exampleModal">badge</button>
+    <button mat-raised-button [routerLink]="['/progress-spinner']"          data-bs-toggle="modal" data-bs-target="#exampleModal">Progress Spinner</button>
+    <button mat-raised-button [routerLink]="['/navbar']"   color="primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">Navbar</button>
+    <button mat-raised-button [routerLink]="['/menu']"     color="warn"     data-bs-toggle="modal" data-bs-target="#exampleModal">Menu</button>
+    <button mat-raised-button [routerLink]="['/list']"     color="accent"   data-bs-toggle="modal" data-bs-target="#exampleModal">List</button>
+    <button mat-raised-button [routerLink]="['/gridlist']" color="primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">Grid list</button>
+    <button mat-raised-button [routerLink]="['/expansion-panel']"    color="warn"     data-bs-toggle="modal" data-bs-target="#exampleModal">Expansion Panel</button>
+    <button mat-raised-button [routerLink]="['/cards']"    color="warn"     data-bs-toggle="modal" data-bs-target="#exampleModal">Cards</button>
+    <button mat-raised-button [routerLink]="['/Tabs']"     color="accent"   data-bs-toggle="modal" data-bs-target="#exampleModal">Tabs</button>
 
 
 
-
+<app-tabs></app-tabs>>
     <!-- Modal -->
-  <div class="modal  fade bd-example-modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal  fade bd-example-modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-body">
